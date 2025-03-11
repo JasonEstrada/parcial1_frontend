@@ -1,53 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Details - Your Name</title>
+    <title>Projects Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-mode">
+<body>
     <header>
         <nav>
-            <span class="logo">Your Name</span>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="projects.html" class="active">Projects</a>
+            <div class="nav-left">
+                <a href="#">Your Name</a>
+            </div>
+            <div class="nav-right">
+                <a href="#">Blog</a>
+                <a href="#">Projects</a>
                 <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#">Newsletter</a>
                 <button class="theme-toggle">🌙</button>
             </div>
         </nav>
+        <h1>PROJECTS</h1>
     </header>
 
-    <section class="project-details">
-        <div class="project-header">
-            <h1>Project Title</h1>
-            <p class="project-meta">By Olivia Rhye • 1 Jan 2023</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c" alt="Project Image" class="project-image">
-        <div class="project-content">
-            <h2>Overview</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            
-            <h2>Key Features</h2>
-            <ul>
-                <li>Feature one description</li>
-                <li>Feature two description</li>
-                <li>Feature three description</li>
-            </ul>
+    <section class="projects">
+        <div class="list-project-grid">
+            <!-- Dos proyectos en una fila -->
+            <div class="project-row">
+                <article class="project-small">
+                    <img src="fotitos/image1.jpg" alt="User Experience Design Dashboard Hotel">
+                    <div class="project-content">
+                        <h3>User Experience Design Dashboard Hotel</h3>
+                        <p>This section is an experience UXI design, a hotel management database which can display all the needs and skill of the hotel staff in each line.</p>
+                    </div>
+                </article>
 
-            <h2>Technologies Used</h2>
-            <div class="tags">
-                <span class="design">HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+                <article class="project-small">
+                    <img src="fotitos/image2.jpg" alt="Bring of User Experience Design to Policy">
+                    <div class="project-content">
+                        <h3>Bring of User Experience Design to Policy</h3>
+                        <p>Your experience UXI offers a 3-d platform that focuses on various products and services that are easy to use, effective and enjoyable for users.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Un proyecto grande que ocupa todo el ancho -->
+            <article class="project-large">
+                <img src="fotitos/image3.jpg" alt="UX Review Presentations">
+                <div class="project-content">
+                    <h3>UX Review Presentations</h3>
+                    <p>How do you create something presentation that ever one dialogue and language can change?</p>
+                </div>
+            </article>
+
+            <!-- Dos proyectos más en una fila -->
+            <div class="project-row">
+                <article class="project-small">
+                    <img src="fotitos/image4.jpg" alt="Icon Package of Sin Icon">
+                    <div class="project-content">
+                        <h3>Icon Package of Sin Icon</h3>
+                        <p>All icon categories are displayed at home and can be used in online design projects, such as online design, app development, and graphic design.</p>
+                    </div>
+                </article>
+
+                <article class="project-small">
+                    <img src="fotitos/image5.jpg" alt="UX Review Presentations">
+                    <div class="project-content">
+                        <h3>UX Review Presentations</h3>
+                        <p>How to aim at different design processes that will be offered when creating a hotel management dashboard.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2023 • <a href="#">Twitter</a> • <a href="#">LinkedIn</a> • <a href="#">Email</a> • <a href="#">RSS feed</a></p>
+        <p>© 2023 <a href="#">Twitter</a> <a href="#">LinkedIn</a> <a href="#">Email</a> <a href="#">RTS Total</a> <a href="#">Add to Faculty</a></p>
     </footer>
+
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
