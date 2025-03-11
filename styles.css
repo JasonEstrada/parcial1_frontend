@@ -92,13 +92,13 @@ h2 {
 
 .project-row {
     display: flex;
-    gap: 20px; /* Ajusta el espacio entre los proyectos según sea necesario */
+    gap: 20px;
 }
 
 .project-small, .project-large {
-    padding: 20px; /* Ajusta el padding según sea necesario */
-    border: 1px solid #ccc; /* Opcional: agrega un borde para mejor visualización */
-    border-radius: 8px; /* Opcional: agrega bordes redondeados */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 article {
@@ -115,13 +115,13 @@ article:hover {
 
 article img {
     width: 100%;
-    height: 200px; /* Ajusta la altura según sea necesario */
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px 8px 0 0; /* Opcional: bordes redondeados solo en la parte superior */
+    border-radius: 8px 8px 0 0;
 }
 
 .project-large img {
-    height: 400px; /* Ajusta la altura del proyecto grande según sea necesario */
+    height: 400px;
 }
 
 .project-content {
@@ -143,19 +143,47 @@ article img {
     color: #999;
 }
 
-.tags span {
-    background: #f0f0f0;
-    padding: 3px 8px;
+/* Tags */
+.tags {
+    margin-top: 10px;
+}
+
+.tags .tag {
+    display: inline-block;
+    padding: 5px 10px;
     font-size: 12px;
     border-radius: 5px;
     margin-right: 5px;
-    display: inline-block;
-    color: #555;
+    font-weight: bold;
+    color: #fff;
 }
 
 .tags .design {
-    background: #cfa9dd;
-    color: #68079c;
+    background: #ff7b72;
+}
+
+.tags .research {
+    background: #72a4ff;
+}
+
+.tags .presentation {
+    background: #fbc02d;
+}
+
+.tags .innovation {
+    background: #66bb6a;
+}
+
+.tags .analysis {
+    background: #ab47bc;
+}
+
+.tags .strategy {
+    background: #ffa726;
+}
+
+.tags .development {
+    background: #26c6da;
 }
 
 footer {
@@ -198,16 +226,6 @@ body.dark-mode .project-content h3 {
     color: #fff;
 }
 
-body.dark-mode .tags {
-    color: #fff;
-    background-color: #555;
-}
-
-body.dark-mode footer {
-    background-color: #444;
-    color: #fff;
-}
-
-body.dark-mode footer a {
-    color: #80b3ff;
+body.dark-mode .tags .tag {
+    opacity: 0.9;
 }
