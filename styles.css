@@ -229,3 +229,163 @@ body.dark-mode .project-content h3 {
 body.dark-mode .tags .tag {
     opacity: 0.9;
 }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 0 20px; /* Added padding to the sides */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* Header Title */
+h1 {
+    font-size: 72px;
+    margin: 10px 0 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    left: 0;
+}
+
+h1::before {
+    top: -10px;
+}
+
+h1::after {
+    bottom: -10px;
+}
+
+/* Sections */
+section {
+    margin: 40px 0;
+    padding: 0 20px; /* Added padding to the sides */
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* About Me Section */
+.about {
+    margin-bottom: 40px;
+}
+
+/* Skills, Experience, and Education Sections */
+.skills ul, .experience ul, .education ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.skills li, .experience li, .education li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Profile Image */
+.profile-image {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode header {
+    background-color: #444;
+}
+
+body.dark-mode .nav-right a {
+    color: #ddd;
+}
+
+body.dark-mode .theme-toggle {
+    color: #fff;
+}
+
+body.dark-mode h1::before,
+body.dark-mode h1::after {
+    background-color: #fff;
+}
+
+body.dark-mode .project-content h3 {
+    color: #fff;
+}
+
+body.dark-mode .tags .tag {
+    opacity: 0.9;
+}
