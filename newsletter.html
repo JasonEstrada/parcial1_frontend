@@ -1,83 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newsletter</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
         <nav>
           <span class="logo">Your Name</span>
           <div class="nav-links">
-            <a href="#">Blog</a>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
-            <a href="#">Newsletter</a>
+            <a href="homepage.html">Blog</a>
+            <a href="project.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="newsletter.html">Newsletter</a>
           </div>
-          <div class="toggle"><input class="l" type="checkbox"  id="theme-toggle"/></div>
+          <div class="toggle">
+            <input class="l" type="checkbox" id="theme-toggle" />
+          </div>
         </nav>
-    </header>
+      </header>
 
-    <section class="newsletter container">
+      <section class="newsletter container">
         <h4 class="newsletter-title">Stories and Interviews</h4>
-        <p class="newsletter-text">Subscribe to learn about new product features, the latest in technology, solutions, and updates.</p>
+        <p class="newsletter-text">
+          Subscribe to learn about new product features, the latest in
+          technology, solutions, and updates.
+        </p>
         <form class="newsletter-form">
-            <input type="email" class="newsletter-input" placeholder="Enter your email">
-            <button type="submit" class="newsletter-button">Subscribe</button>
+          <input
+            type="email"
+            class="newsletter-input"
+            placeholder="Enter your email"
+          />
+          <button type="submit" class="newsletter-button">Subscribe</button>
         </form>
-        <p class="privacy">We care about your data in our <a href="#">privacy policy</a>.</p>
-    </section>
+        <p class="privacy">
+          We care about your data in our <a href="#">privacy policy</a>.
+        </p>
+      </section>
 
-    <section class="all-posts container">
+      <section class="all-posts container">
         <h2>All Blog Posts</h2>
         <div class="parent">
-            <article class="article-first div1">
-                <img src="img/image1.jpg" alt="Bill Walsh leadership lessons">
-                <div class="post-content">
-                    <p class="date">Sunday, 1 Jan 2023</p>
-                    <h3>Bill Walsh leadership lessons</h3>
-                    <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>
-                    <div class="tags">
-                        <span class="tag design">Management</span>
-                        <span class="tag research">Presentation</span>
-                    </div>
-                </div>
-            </article>
+          <article class="article-first div1">
+            <img
+              src="img/photo-1552664730-d307ca884978.jpeg"
+              alt="Bill Walsh leadership lessons"
+            />
+            <div class="post-content">
+              <p class="date">Sunday, 1 Jan 2023</p>
+              <h3>Bill Walsh leadership lessons</h3>
+              <p>
+                Like to know the secrets of transforming a 2-14 team into a 3x
+                Super Bowl winning Dynasty?
+              </p>
+              <div class="tags">
+                <span class="design">Management</span>
+                <span class="research">Presentation</span>
+              </div>
+            </div>
+          </article>
 
-            <article class="article-second div2">
-                <img src="img/image2.jpg" alt="PM mental models">
-                <div class="post-content">
-                    <p class="date">Sunday, 1 Jan 2023</p>
-                    <h3>PM mental models</h3>
-                    <p>Mental models are simple expressions of complex processes or relationships.</p>
-                    <div class="tags">
-                        <span class="tag product">Product</span>
-                        <span class="tag research">Research</span>
-                        <span class="tag framework">Framework</span>
-                    </div>
-                </div>
-            </article>
+          <article class="article-second div2">
+            <img
+              src="img/photo-1454165804606-c3d57bc86b40.jpeg"
+              alt="PM mental models"
+            />
+            <div class="post-content">
+              <p class="date">Sunday, 1 Jan 2023</p>
+              <h3>PM mental models</h3>
+              <p>
+                Mental models are simple expressions of complex processes or
+                relationships.
+              </p>
+              <div class="tags">
+                <span class="design">Product</span>
+                <span class="research">Research</span>
+                <span class="interface">Framework</span>
+              </div>
+            </div>
+          </article>
 
-            <article class="article-first div3">
-                <img src="img/image3.jpg" alt="What is Wireframing?">
-                <div class="post-content">
-                    <p class="date">Sunday, 1 Jan 2023</p>
-                    <h3>What is Wireframing?</h3>
-                    <p>Introduction to Wireframing and its Principles. Learn from the best in the industry.</p>
-                    <div class="tags">
-                        <span class="tag design">Design</span>
-                        <span class="tag research">Research</span>
-                        <span class="tag presentation">Presentation</span>
-                    </div>
-                </div>
-            </article>
+          <article class="article-first div3">
+            <img
+              src="img/photo-1497366216548-37526070297c.jpeg"
+              alt="What is Wireframing?"
+            />
+            <div class="post-content">
+              <p class="date">Sunday, 1 Jan 2023</p>
+              <h3>What is Wireframing?</h3>
+              <p>
+                Introduction to Wireframing and its Principles. Learn from the
+                best in the industry.
+              </p>
+              <div class="tags">
+                <span class="design">Design</span>
+                <span class="research">Research</span>
+                <span class="interface">Presentation</span>
+              </div>
+            </div>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <footer>
-        <p>© 2023 <a href="#">Twitter</a> <a href="#">LinkedIn</a> <a href="#">Email</a> <a href="#">RSS feed</a> <a href="#">Add to Feedly</a></p>
-    </footer>
-</body>
+      <footer>
+        <p>
+          © 2023 <a href="#">Twitter</a> <a href="#">LinkedIn</a>
+          <a href="#">Email</a> <a href="#">RSS feed</a>
+          <a href="#">Add to Feedly</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

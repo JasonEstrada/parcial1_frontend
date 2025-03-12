@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Doe - UI Designer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
         <nav>
-            <div class="logo">John Doe</div>
-            <div class="nav-links">
-                <a href="#">Blog</a>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
-                <a href="#">Newsletter</a>
-                <input type="checkbox" class="l theme-toggle" aria-label="Toggle Dark Mode">
-            </div>
+          <div class="logo">John Doe</div>
+          <div class="nav-links">
+            <a href="homepage.html">Blog</a>
+            <a href="project.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="newsletter.html">Newsletter</a>
+            <div class="toggle"><input class="l" type="checkbox"  id="theme-toggle"/></div>
+          </div>
         </nav>
         <h1>John Doe</h1>
-    </header>
-    
-    <div class="container">
-        <div class="profile-image" style="text-align: center;">
-            <img src="img/image1.jpg" alt="John Doe" style="display: inline-block;">
+      </header>
+
+      <div>
+        <div class="profile-image">
+          <img
+            src="img\christopher-campbell-rDEOVtE7vOs-unsplash.jpg"
+            alt="John Doe"
+          />
         </div>
         <section class="about">
-            <h2>About Me</h2>
-            <p>As a passionate and experienced UI designer, I am dedicated to creating intuitive and engaging user experiences...</p>
+          <h2>About Me</h2>
+          <p class="p-about">
+            As a passionate and experienced UI designer, I am dedicated to
+            creating intuitive and engaging user experiences...
+          </p>
         </section>
 
         <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Extensive experience in UI design</li>
-                <li>Proficiency in Adobe Creative Suite and Sketch</li>
-                <li>Excellent visual design skills</li>
-                <li>Strong communication and collaboration skills</li>
-                <li>Proficiency in HTML, CSS, and JavaScript</li>
-            </ul>
+          <h2>Skills</h2>
+          <ul class="p-skills">
+            <li>Extensive experience in UI design</li>
+            <li>Proficiency in Adobe Creative Suite and Sketch</li>
+            <li>Excellent visual design skills</li>
+            <li>Strong communication and collaboration skills</li>
+            <li>Proficiency in HTML, CSS, and JavaScript</li>
+          </ul>
         </section>
 
         <section class="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>5 years of experience as a UI designer</li>
-                <li>Led the design of a successful e-commerce website</li>
-                <li>Created wireframes and prototypes for a mobile banking app</li>
-            </ul>
+          <h2>Experience</h2>
+          <ul class="p-experience">
+            <li>5 years of experience as a UI designer</li>
+            <li>Led the design of a successful e-commerce website</li>
+            <li>Created wireframes and prototypes for a mobile banking app</li>
+          </ul>
         </section>
 
         <section class="education">
-            <h2>Education</h2>
-            <ul>
-                <li>Bachelor's degree in Graphic Design</li>
-                <li>Certified User Experience Designer (CLEB)</li>
-            </ul>
+          <h2>Education</h2>
+          <ul class="p-education">
+            <li>Bachelor's degree in Graphic Design</li>
+            <li>Certified User Experience Designer (CLEB)</li>
+          </ul>
         </section>
+      </div>
+
+      <footer>
+        <p>
+          © 2023 <a href="#">Twitter</a> <a href="#">LinkedIn</a>
+          <a href="#">Email</a> <a href="#">RSS feed</a>
+          <a href="#">Add to Feedly</a>
+        </p>
+      </footer>
     </div>
 
-    <footer>
-        <p>© 2023 <a href="#">Twitter</a> <a href="#">LinkedIn</a> <a href="#">Email</a> <a href="#">RSS feed</a> <a href="#">Add to Feedly</a></p>
-    </footer>
-
-    <script>
-        const themeToggle = document.querySelector('.theme-toggle');
-        const body = document.body;
-
-        themeToggle.addEventListener('change', () => {
-            body.classList.toggle('dark-mode');
-        });
-    </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
