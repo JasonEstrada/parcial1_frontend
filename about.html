@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe - UI Designer</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <header>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
         <nav>
           <div class="logo">John Doe</div>
+          <button class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0,0,256,256">
+              <g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </button>
           <div class="nav-links">
             <a href="homepage.html">Blog</a>
             <a href="project.html">Projects</a>
             <a href="about.html">About</a>
             <a href="newsletter.html">Newsletter</a>
-            <div class="toggle"><input class="l" type="checkbox"  id="theme-toggle"/></div>
+            <a href="authors.html">Authors</a>
+            <div class="toggle"><input class="l" type="checkbox" id="theme-toggle" /></div>
           </div>
         </nav>
         <h1>John Doe</h1>
@@ -29,56 +38,49 @@
       <div>
         <div class="profile-image">
           <img
-            src="img\christopher-campbell-rDEOVtE7vOs-unsplash.jpg"
+            src="img\about.jpg"
             alt="John Doe"
           />
         </div>
         <section class="about">
-          <h2>About Me</h2>
-          <p class="p-about">
-            As a passionate and experienced UI designer, I am dedicated to
-            creating intuitive and engaging user experiences...
-          </p>
+            <h2>About Me</h2>
+            <p>As a passionate and experienced UI designer, I am dedicated to creating intuitive and engaging user experiences...</p>
         </section>
 
         <section class="skills">
-          <h2>Skills</h2>
-          <ul class="p-skills">
-            <li>Extensive experience in UI design</li>
-            <li>Proficiency in Adobe Creative Suite and Sketch</li>
-            <li>Excellent visual design skills</li>
-            <li>Strong communication and collaboration skills</li>
-            <li>Proficiency in HTML, CSS, and JavaScript</li>
-          </ul>
+            <h2>Skills</h2>
+            <ul>
+                <li>Extensive experience in UI design</li>
+                <li>Proficiency in Adobe Creative Suite and Sketch</li>
+                <li>Excellent visual design skills</li>
+                <li>Strong communication and collaboration skills</li>
+                <li>Proficiency in HTML, CSS, and JavaScript</li>
+            </ul>
         </section>
 
         <section class="experience">
-          <h2>Experience</h2>
-          <ul class="p-experience">
-            <li>5 years of experience as a UI designer</li>
-            <li>Led the design of a successful e-commerce website</li>
-            <li>Created wireframes and prototypes for a mobile banking app</li>
-          </ul>
+            <h2>Experience</h2>
+            <ul>
+                <li>5 years of experience as a UI designer</li>
+                <li>Led the design of a successful e-commerce website</li>
+                <li>Created wireframes and prototypes for a mobile banking app</li>
+            </ul>
         </section>
 
         <section class="education">
-          <h2>Education</h2>
-          <ul class="p-education">
-            <li>Bachelor's degree in Graphic Design</li>
-            <li>Certified User Experience Designer (CLEB)</li>
-          </ul>
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor's degree in Graphic Design</li>
+                <li>Certified User Experience Designer (CLEB)</li>
+            </ul>
         </section>
-      </div>
-
-      <footer>
-        <p>
-          © 2023 <a href="#">Twitter</a> <a href="#">LinkedIn</a>
-          <a href="#">Email</a> <a href="#">RSS feed</a>
-          <a href="#">Add to Feedly</a>
-        </p>
-      </footer>
     </div>
 
+    <footer>
+        <p>© 2023 <a href="#">Twitter</a> <a href="#">LinkedIn</a> <a href="#">Email</a> <a href="#">RSS feed</a> <a href="#">Add to Feedly</a></p>
+    </footer>
+
     <script src="script.js"></script>
-  </body>
+
+</body>
 </html>
