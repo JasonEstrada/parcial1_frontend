@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <header>
+    <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
         <nav>
           <span class="logo">Your Name</span>
+          <button class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0,0,256,256">
+              <g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </button>
           <div class="nav-links">
             <a href="homepage.html">Blog</a>
             <a href="project.html">Projects</a>
             <a href="about.html">About</a>
             <a href="newsletter.html">Newsletter</a>
-          </div>
-          <div class="toggle">
-            <input class="l" type="checkbox" id="theme-toggle" />
+            <a href="authors.html">Authors</a>
+            <div class="toggle"><input class="l" type="checkbox" id="theme-toggle" /></div>
           </div>
         </nav>
-      </header>
+    </header>
 
-      <section class="newsletter container">
+    <section class="newsletter container">
         <h4 class="newsletter-title">Stories and Interviews</h4>
-        <p class="newsletter-text">
-          Subscribe to learn about new product features, the latest in
-          technology, solutions, and updates.
-        </p>
+        <p class="newsletter-text">Subscribe to learn about new product features, the latest in technology, solutions, and updates.</p>
         <form class="newsletter-form">
-          <input
-            type="email"
-            class="newsletter-input"
-            placeholder="Enter your email"
-          />
-          <button type="submit" class="newsletter-button">Subscribe</button>
+            <input type="email" class="newsletter-input" placeholder="Enter your email">
+            <button type="submit" class="newsletter-button">Subscribe</button>
         </form>
-        <p class="privacy">
-          We care about your data in our <a href="#">privacy policy</a>.
-        </p>
-      </section>
+        <p class="privacy">We care about your data in our <a href="#">privacy policy</a>.</p>
+    </section>
 
-      <section class="all-posts container">
+    <section class="all-posts container">
         <h2>All Blog Posts</h2>
         <div class="parent">
-          <article class="article-first div1">
+          <article class="article vertical div1">
             <img
-              src="img/photo-1552664730-d307ca884978.jpeg"
+              src="img/post1.jpg"
               alt="Bill Walsh leadership lessons"
             />
             <div class="post-content">
@@ -68,9 +68,9 @@
             </div>
           </article>
 
-          <article class="article-second div2">
+          <article class="article vertical div2">
             <img
-              src="img/photo-1454165804606-c3d57bc86b40.jpeg"
+              src="img/post2.jpg"
               alt="PM mental models"
             />
             <div class="post-content">
@@ -88,9 +88,9 @@
             </div>
           </article>
 
-          <article class="article-first div3">
+          <article class="article  vertical div3">
             <img
-              src="img/photo-1497366216548-37526070297c.jpeg"
+              src="img/post3.jpg"
               alt="What is Wireframing?"
             />
             <div class="post-content">
@@ -108,17 +108,13 @@
             </div>
           </article>
         </div>
-      </section>
+    </section>
 
-      <footer>
-        <p>
-          © 2023 <a href="#">Twitter</a> <a href="#">LinkedIn</a>
-          <a href="#">Email</a> <a href="#">RSS feed</a>
-          <a href="#">Add to Feedly</a>
-        </p>
-      </footer>
-    </div>
+    <footer>
+        <p>© 2023 <a href="#">Twitter</a> <a href="#">LinkedIn</a> <a href="#">Email</a> <a href="#">RSS feed</a> <a href="#">Add to Feedly</a></p>
+    </footer>
 
     <script src="script.js"></script>
-  </body>
+
+</body>
 </html>
