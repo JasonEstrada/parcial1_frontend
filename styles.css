@@ -239,6 +239,7 @@ body.dark-mode .article .post-content .author {
     height: 50%;
     /* La imagen ocupa el 50% de la altura del contenedor */
     max-height: 15rem;
+    display: cover;
 }
 
 .article.vertical .post-content {
@@ -628,4 +629,21 @@ body.dark-mode .education li {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.gallery {
+    background: #ffffff;
+    border-radius: 8px;
+    height: 100%;
+    max-height: 25rem; /* Aumenta la altura máxima */
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%; /* Ahora ocupa todo el ancho del contenedor */
+    height: 60%; /* Ocupará más espacio verticalmente */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
+    border-radius: 8px 8px 0 0; /* Opcional: bordes redondeados en la parte superior */
 }
