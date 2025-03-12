@@ -105,12 +105,7 @@ body.dark-mode h1:after {
 /* Estilos para los subtítulos */
 h2 {
     font-size: 1.5vw;  /* Tamaño de la fuente adaptable */
-    margin: 20px 0;
-}
-
-h4 {
-    font-size: 3vw;  /* Tamaño de la fuente adaptable */
-    margin: 20px 0;
+    margin: 20px;
 }
 
 
@@ -122,6 +117,7 @@ h4 {
     grid-column-gap: 20px;  /* Espacio entre columnas */
     grid-row-gap: 20px;     /* Espacio entre filas */
     margin: 20px;
+    align-content: stretch;
 }
 
 /* Cada publicación ocupa un área específica dentro de la grilla */
@@ -197,13 +193,18 @@ body.dark-mode .article-second .post-content .author {
 }
 
 .article-first img {
-    width: 100%;
-    height: 200px;
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: 50%; /* La imagen ocupa el 50% de la altura del contenedor */
     object-fit: cover;
+    max-height: 20rem;
 }
 
 .article-first .post-content {
-    padding: 15px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
 .article-first .post-content h3 {
@@ -246,20 +247,25 @@ body.dark-mode .article-second .post-content .author {
     display: flex;  /* Aquí los ponemos en una fila (imagen + texto) */
     flex-direction: row;
     height: 100%;
-    align-items: center;
+    align-items: stretch; 
+    max-height: 15rem;
 }
 
 .article-second img {
-    width: 50%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 20px;
-    padding: 10px;
+    width: 50%; /* La imagen ocupa el 50% del ancho */
+    height: 100%; /* La imagen ocupa el 100% de la altura */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-radius: 0; 
+    max-width: 100%;  /* No puede ser más ancho que el padre */
+    max-height: 100%;
 }
 
 .article-second .post-content {
-    padding: 15px;
-    width: 50%;  /* El texto ocupa el otro 50% */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-evenly;
 }
 
 .article-second .post-content h3 {
@@ -554,4 +560,9 @@ body.dark-mode footer a {
 
 .privacy a:hover {
     text-decoration: underline;
+}
+
+h4 {
+    font-size: 3vw;  /* Tamaño de la fuente adaptable */
+    margin: 20px 0;
 }
